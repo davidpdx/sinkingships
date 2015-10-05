@@ -1,0 +1,59 @@
+body {
+	padding-top: 70px;
+	padding-bottom: 30px;
+	background-color:#000;
+	background-image:url("sinkingships.jpg");
+	background-repeat: repeat;
+    /*background-attachment: fixed;*/
+    background-position: 30% 0; 
+	font-family:georgia,serif;
+}
+.jumbotron{background:transparent;text-align:center;}
+.jumbotron p{text-shadow:none;}
+.theme-dropdown .dropdown-menu {
+  position: static;
+  display: block;
+  margin-bottom: 20px;
+}
+.theme-showcase > p > .btn {margin: 5px 0;}
+.theme-showcase .navbar .container {width: auto;}
+.wrapper{margin-top: 430px;height:600px;max-width:100%;}
+nav audio{margin-top:6px;}
+.panel{background-color:rgba(255,255,255,.4);}
+.panel.panel-default{background-color:rgba(255,255,255,.4);}
+.panel-heading{padding:0;border:none;background:transparent;}
+.panel-title{display:none;}
+div h3.panel-title{background:transparent;}
+.well{background:transparent;background-color:rgba(255,255,255,.4);}
+a{color:#eee;text-shadow:#222 1px 1px;font-size:16px;}
+a:hover{color:#999;text-decoration:none;}
+li,p{color:#222;text-shadow:#eee 1px 1px;font-weight:bold;font-size:16px;}
+nav div.container {max-width:auto;margin:0 auto;}
+
+
+@media only screen 
+and (min-width : 768px) 
+and (max-width : 1024px){
+
+}
+
+@media only screen 
+and (min-width : 481px) 
+and (max-width : 767px){
+
+}
+
+@media only screen 
+and (max-width : 540px){
+body {
+	padding-top: 70px;
+	padding-bottom: 30px;
+	background-color:#000;
+	background-image:url("sinkingships.jpg");
+	background-repeat: repeat;
+    /*background-attachment: fixed;*/
+    /*background-position: 55% 40%;*/
+	font-family:georgia,serif;
+}
+
+}
