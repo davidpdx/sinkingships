@@ -1,1 +1,359 @@
-"My Page" 
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>sinking ships</title>
+
+	
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="bootstrap-theme.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="theme.css" rel="stylesheet">
+
+ <style>
+ 
+#move{position:absolute;left:360px;top:480px;}
+
+/*.ghostship{box-shadow: 0 0 20px 20px #fff;position:absolute;left:110px;top:330px;}*/
+
+.ghostship{box-shadow: 0 0 20px 20px #fff;}
+.ghosthide {box-shadow: none;}
+.originalsize img {width: 40px;}
+.changesize img {width: 20px;}
+#controls {position: absolute; top: 550px; left: 120px;}
+#showcontrols {position: absolute; top: 550px; left: 330px; display:none;}
+
+@media only screen 
+and (max-width : 540px){
+body {
+	padding-top: 70px;
+	padding-bottom: 30px;
+	background-color:#000;
+	background-image:url("sinkingships.jpg");
+	background-repeat: repeat;
+    /*background-attachment: fixed;*/
+    /*background-position: 55% 40%;*/
+	font-family:georgia,serif;
+}
+
+#move{position:absolute;left:120px;top:480px;}
+.originalsize img {width: 40px;}
+.changesize img {width: 20px;}
+#controls {position: absolute; top: 550px; left: 120px;}
+#showcontrols {position: absolute; top: 550px; left: 85px; display:none;}
+}
+.lightning {position: absolute; top: 140px; right: 0;}
+.thunder {display:none}
+
+</style>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body role="document">
+
+    <!-- Fixed navbar -->
+   
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <audio controls class="navbar-brand">
+			<source src="12.mp3" type="audio/mpeg">
+			<source src="12.mp3" type="audio/mpeg">
+			<source src="12.mp3" type="audio/mpeg">
+			<source src="12.mp3" type="audio/mpeg">
+			<source src="12.mp3" type="audio/mpeg">
+			<source src="12.mp3" type="audio/mpeg">
+			Your browser does not support the audio element.
+			</audio>
+		  
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#">sinking ships</a></li>
+            <li><a href="#about">tour</a></li>
+            <li><a href="#contact">contact</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">merch <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">music</a></li>
+                <li><a href="#">tangibles</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">New!</li>
+                <li><a href="#">things</a></li>
+                <li><a href="#">items</a></li>
+              </ul>
+            </li>
+			
+          </ul>
+	
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+	
+
+    <div class="container theme-showcase" role="main">
+
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <h1 onmouseover="Lightning()" onmouseout="Thunder()">sinking ships</h1>
+        <p>Portland, Oregon</p>
+		
+        
+      </div>
+	  <div class="wrapper">
+	  <div class="well">
+        <!--<audio src="horse.mp3" controls preload></audio>
+		<audio controls>
+			<source src="horse.mp3" type="audio/mpeg">
+			<source src="horse.mp3" type="audio/mpeg">
+			<source src="horse.mp3" type="audio/mpeg">
+			<source src="horse.mp3" type="audio/mpeg">
+			<source src="horse.mp3" type="audio/mpeg">
+			<source src="horse.mp3" type="audio/mpeg">
+			Your browser does not support the audio element.
+			</audio>-->
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur.</p>
+      </div>
+	  
+	  <div class="row">
+        <div class="col-sm-8">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Panel title</h3>
+            </div>
+            <div class="panel-body">
+              <p>Panel content</p>
+			  <p>Tour Notes</p>
+			  <p>Tour Notes</p>
+			  <p>Tour Notes</p>
+			  <p>Tour Notes</p>
+			  <p>Tour Notes</p>
+			  <p>Tour Notes</p>
+			  
+            </div>
+          </div>
+          
+		  
+        </div><!-- /.col-sm-4 -->
+		
+		<div class="col-sm-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Panel title</h3>
+            </div>
+            <div class="panel-body">
+			<p>Panel content</p>
+            <ol> 
+			 <li><a href="#">songs here</a></li>
+			  <li><a href="#">songs here</a></li>
+			  <li><a href="#">songs here</a></li>
+			  <li><a href="#">songs here</a></li>
+			  <li><a href="#">songs here</a></li>
+			  <li><a href="#">songs here</a></li>
+            </ol>
+			</div>
+          </div>
+     
+		  
+        </div><!-- /.col-sm-4 -->
+	
+		<!-- <div class="col-sm-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Panel title</h3>
+            </div>
+            <div class="panel-body">
+              <p>Panel content</p>
+            </div>
+          </div>
+          
+		  
+        </div><!-- /.col-sm-4 -->
+		
+      </div>
+  
+	  </div>
+
+    </div> <!-- /container -->
+	
+	<!--game-->
+	
+	<p id="move" class="originalsize"> <!--container for ship-->
+	<img src="lilshipsmall.png" id="imgShip" onmouseover="ShowControlPanel()"><!--ship-->
+</p>
+
+<input type="button" value="Show Controls" onclick="ShowControls()" id="showcontrols"></button> <!--show controls button-->
+<p id="controls"></p> <!--control panel-->
+<p><img id="lightning" class="thunder" src="lightning.png"></p>
+<script>
+
+var move = document.getElementById("move"); //move is a <p>
+var marginLeft = 10; // marginLeft + j === boat margin left
+var j = "px";
+var k = 1; // flag to stop boat
+var switchCount = 0;
+var sizeCount = 0;
+var rate = 5; // rate of travel
+var intervalId; //interval id return value is used to clear interval
+var imgShip; // var for #imgShip
+var shipPosition = move.style;
+var ghostCount = 0;
+var controls = document.getElementById("controls");
+var controlsText = "";
+var showControls = document.getElementById("showcontrols");
+var controlsCount = 0;
+
+//move.firstElementChild.width = 32; //sets ship width
+imgShip = document.getElementById("imgShip"); //assigning reference var
+
+function Lightning() {
+	document.getElementById("lightning").className = "lightning";
+}
+function Thunder() {
+	document.getElementById("lightning").className = "thunder";
+}
+
+function outOfBounds() {
+	if (marginLeft > 400){ //console.log('out of bounds - stage right');
+		StopTheBoat();
+		ComeBack();	//console.log('turning around');
+		MoveTheBoat(); //console.log('coming back');
+	}
+	if (marginLeft < -250){ //console.log('out of bounds - stage left');
+		StopTheBoat();
+		ComeBack(); //console.log('turning around');
+		MoveTheBoat(); //console.log('coming back');
+	}
+}
+function MoveIt(){ // this function is a parameter of movetheboat()
+	shipPosition.marginLeft = marginLeft + j; //margin left moves the <p> holding the boat. At start: marginLeft=10, j="px"
+	if (k > 0) {
+		marginLeft += rate; // assignment statement updates margin position. At start: k=1, l=0, marginLeft=10, rate=5. This line initializes marginLeft to 6 [1*(5+(1+0))]. k multiplication stops the boat if set to 0 and resumes if set to 1. //console.log(marginLeft); //writes position to log. At start marginLeft=10
+		outOfBounds();
+	}
+}
+function MoveTheBoat(){
+	intervalId = setInterval(MoveIt, 100);
+	k = 1; //reset ship stop flag
+}
+function StopTheBoat(){
+	k = 0; // stop boat
+	clearInterval(intervalId); //interval id return value is used to clear interval
+}
+function ComeBack(){
+	switchCount += 1; //counts switches to determine ship facing
+	if (switchCount % 2 === 1) { //1 means ship is facing right
+		//imgShip.src = imgShip.src.replace("lilship.png", "lilshipleft.png"); //switches right-facing ship pic to left-facing ship //console.log("switch to left");
+		imgShip.src = imgShip.src.replace("lilshipsmall.png", "lilshipleftsmall.png"); //switches right-facing ship pic to left-facing ship //console.log("switch to left");
+		imgShip.src = imgShip.src.replace("lilshipghost.png", "lilshipleftghost.png");
+		rate *= (-1);
+	}
+	else if (switchCount % 2 === 0) { //0 means ship is facing left
+		imgShip.src = imgShip.src.replace("lilshipleftsmall.png", "lilshipsmall.png"); //switches left-facing ship pic to right-facing ship //console.log("switch to right");
+		imgShip.src = imgShip.src.replace("lilshipleftghost.png", "lilshipghost.png");
+		rate *= (-1);
+	}
+	else {
+		console.log("no switch"); //catch error
+	}	
+}
+
+function GhostShip(){
+	ghostCount +=1;
+	if ((ghostCount % 2 === 1) && (switchCount % 2 === 0)) { //ship facing right, turns ghost on
+			imgShip.src = imgShip.src.replace("lilshipsmall.png", "lilshipghost.png"); //switches right-facing ship pic to left-facing ship 
+	}
+	else if ((ghostCount % 2 === 0) && (switchCount % 2 === 0)) { //ship facing right, turns ghost off
+		imgShip.src = imgShip.src.replace("lilshipghost.png", "lilshipsmall.png"); //switches left-facing ship pic to right-facing ship		
+	}
+	else if ((ghostCount % 2 === 1) && (switchCount % 2 === 1)) { //ship facing left, turns ghost on
+			imgShip.src = imgShip.src.replace("lilshipleftsmall.png", "lilshipleftghost.png"); //switches right-facing ship pic to left-facing ship 
+	}
+	else if ((ghostCount % 2 === 0) && (switchCount % 2 === 1)) { //ship facing left, turns ghost off
+		imgShip.src = imgShip.src.replace("lilshipleftghost.png", "lilshipleftsmall.png"); //switches left-facing ship pic to right-facing ship		
+	}	
+	
+	else {
+		console.log("ship not haunted"); //catch error
+	}	
+	//document.getElementById("ghostpara").className = "ghostship";
+	//document.getElementById("imgShip").className = "ghostship";	
+	//document.getElementById("ghostpara").className = "ghosthide";
+}
+function ChangeSize() {
+	sizeCount += 1;
+	if (sizeCount % 2 === 1) {
+		document.getElementById("move").className = "changesize"; //move.firstElementChild.width = 8;// console.log("shrinky size!");
+	} else if (sizeCount % 2 === 0) {
+		document.getElementById("move").className = "originalsize"; //move.firstElementChild.width = 32; // console.log("regular size!");
+	} else {
+		console.log("no change in size"); //catch error
+	}
+}
+function ShowControls() {
+	controlsText += '<input type="button" value="Move that Boat!" onclick="MoveTheBoat()"></button>';
+	controlsText += '<input type="button" value="Stop!" onclick="StopTheBoat()"></button>';
+	controlsText += '<input type="button" value="Change Direction!" onclick="ComeBack()"></button>';
+	controlsText += '<input type="button" value="Ghost Ship?" onclick="GhostShip()"></button>';
+	controlsText += '<input type="button" value="Change Size!" onclick="ChangeSize()"></button>';
+	controls.innerHTML += controlsText;
+	document.getElementById("showcontrols").style.display = "none";
+}
+function ShowControlPanel () {
+	controlsCount += 1;
+	if (controlsCount <= 1) {
+		showControls.style.display = "block";
+	}
+}
+
+//issues:
+
+//rate is 5 at first
+//multiple move presses increases rate
+	//solution: rate counter, stop resets rate counter
+	
+//ship position not responsive
+	//solution: switch to %
+
+//to do:
+// build submerge function
+// nessie cameo
+// s to anchor
+// lightning strike
+// crows
+
+
+</script>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
